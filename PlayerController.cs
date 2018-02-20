@@ -23,8 +23,10 @@ public class PlayerController : MonoBehaviour {
 
     public bool shieldCharge  = false;
     public GameObject shieldObj;
-    
-    
+
+
+    //public GameObject PromptLaser;
+    //public GameObject PromptMissile;
 
 
 
@@ -88,9 +90,7 @@ public class PlayerController : MonoBehaviour {
 
     public void ShieldOn()
     {
-        
         shieldObj.SetActive(true);
-
         shieldHud.ShieldDamage();
         
     }
@@ -122,6 +122,7 @@ public class PlayerController : MonoBehaviour {
             if (powerUp.type == PowerUp.Type.Shield)
             {
                 shieldCharge = true;
+                
             }
 
         }
